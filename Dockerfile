@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 FROM python:3.8.2-alpine
-WORKDIR /schedulefyi_project
+WORKDIR /my_schedulefyi
 ENV FLASK_APP=schedulefyi.py
 ENV FLASK_RUN_HOST=0.0.0.0
 ENV CRYPTOGRAPHY_DONT_BUILD_RUST=1
