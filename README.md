@@ -1,6 +1,6 @@
 # Docker_Container_For_Flask_App
 
--  Copy Dockerfile and requirements.txt underneath the schedulefyi directory.
+-  Copy Dockerfile and requirements.txt underneath the my_schedulefyi directory.
 
 ## Execute the following commands in terminal:
 - docker-compose up (will launch both Flask and mysql apps)
