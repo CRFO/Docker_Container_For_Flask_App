@@ -1,6 +1,7 @@
 # syntax=docker/dockerfile:1
 FROM python:3.8.2-alpine
 WORKDIR /my_schedulefyi
+COPY schedulefyi.sql /docker-entrypoint-initdb.d/schedulefyi.sql
 ENV FLASK_APP=schedulefyi.py
 ENV FLASK_RUN_HOST=0.0.0.0
 ENV CRYPTOGRAPHY_DONT_BUILD_RUST=1
