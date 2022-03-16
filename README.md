@@ -1,6 +1,6 @@
 # Docker_Container_For_Flask_App
 
--  Copy Dockerfile and requirements.txt underneath the my_schedulefyi directory.
+-  Copy docker-compose.yml, Dockerfile, schedulefyi.sql and requirements.txt underneath the my_schedulefyi directory.
 
 ## Execute the following commands in terminal:
 - docker-compose up 
