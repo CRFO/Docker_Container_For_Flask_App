@@ -8,10 +8,10 @@ services:
     volumes:
       - '/Applications/mamp/mysql/data'
     environment: 
-            MYSQL_ROOT_PASSWORD: cFa2807
+            MYSQL_ROOT_PASSWORD: my_root_pwd
             MYSQL_DATABASE: schedulefyi
             MYSQL_USER: schedulefyi
-            MYSQL_PASSWORD: uN7LgrJtvN6H94Tm
+            MYSQL_PASSWORD: schedulefyi_pwd
 
   flask:
     build: 
