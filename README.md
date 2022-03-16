@@ -3,7 +3,12 @@
 -  Copy Dockerfile and requirements.txt underneath the my_schedulefyi directory.
 
 ## Execute the following commands in terminal:
-- docker-compose up (will launch both Flask and mysql apps)
+- docker-compose up 
+- docker cp schedulefyi.sql mysql:/bitnami/mysql/data (where mysql is <container_name>)
+- cd /bitnami/mysql/data
+- docker exec -it mysql /bin/bash
+- mysql -u root -p
+- source schedulefyi.sql
 
 To execute only the Flask app:
 - docker build --tag my_schedulefyi --no-cache .
