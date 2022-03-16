@@ -10,6 +10,25 @@
 - mysql -u root -p
 - source schedulefyi.sql
 
+mysql> show tables;
++-----------------------+
+| Tables_in_schedulefyi |
++-----------------------+
+| company               |
+| country               |
+| location              |
+| project               |
+| projectnote           |
+| subtask               |
+| subtasknote           |
+| task                  |
+| tasknote              |
+| user                  |
+| user_company          |
++-----------------------+
+11 rows in set (0.02 sec)
+
+
 To execute only the Flask app:
 - docker build --tag my_schedulefyi --no-cache .
 - docker run -p 5001:5000 my_schedulefyi 
