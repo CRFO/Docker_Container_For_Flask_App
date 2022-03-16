@@ -1,27 +1,37 @@
-version: '3.7'
+version: '3'
+networks:
+  my_network_name:
+    name: my_network_name
+    external: false
+
 services:
   mysql:
-    image: bitnami/mysql:latest
+    image: 'bitnami/mysql:latest'
     container_name: mysql
     ports:
-      - '3309:3306'
+      - '3310:3306'
     volumes:
-      - '/Applications/mamp/mysql/data'
+      - '/docker-entrypoint-initdb.d'
+      - '/bitnami/mysql/data'
     environment: 
-            MYSQL_ROOT_PASSWORD: my_root_pwd
+            MYSQL_ROOT_PASSWORD: cFa2807
             MYSQL_DATABASE: schedulefyi
             MYSQL_USER: schedulefyi
-            MYSQL_PASSWORD: schedulefyi_pwd
+            MYSQL_PASSWORD: uN7LgrJtvN6H94Tm
+    networks:
+      - my_network_name
 
   flask:
     build: 
       context: .
       dockerfile: Dockerfile
-    container_name: flask
+    container_name: flask_project
     restart: always
     depends_on:
       - mysql
     links:
       - mysql
     ports:
-      - 5001:5000
+      - 5002:5000
+    networks:
+      - my_network_name
