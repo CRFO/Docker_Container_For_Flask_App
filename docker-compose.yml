@@ -2,9 +2,9 @@ version: '3.8'
 services:
   mysql:
     image: docker.io/bitnami/mysql:8.0
-    container_name: mysql_db
+    container_name: mysql
     ports:
-      - '127.0.0.1:3309:3306'
+      - '3309:3306'
     volumes:
       - '/Applications/mamp/mysql/data'
     environment: 
