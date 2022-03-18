@@ -25,7 +25,6 @@ mysql> show tables;
 | tasknote              |
 | user                  |
 | user_company          |
-|-----------------------|
 
 11 rows in set (0.02 sec)
 
