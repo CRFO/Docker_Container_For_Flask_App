@@ -3,7 +3,9 @@
 -  Copy docker-compose.yml, Dockerfile, schedulefyi.sql and requirements.txt underneath the my_schedulefyi directory.
 
 ## Execute the following commands in terminal:
-- docker-compose up 
+- docker-compose up --> It creates flask_project and mysql containers
+
+To refresh schedulefyi schema after recreating schedulefyi.sql:
 - docker cp schedulefyi.sql mysql:/bitnami/mysql/data (where mysql is <container_name>)
 - cd /bitnami/mysql/data
 - docker exec -it mysql /bin/bash
