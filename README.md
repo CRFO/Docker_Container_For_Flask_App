@@ -11,6 +11,7 @@
 - source schedulefyi.sql
 
 mysql> show tables;
+
 +-----------------------+
 | Tables_in_schedulefyi |
 +-----------------------+
@@ -26,6 +27,7 @@ mysql> show tables;
 | user                  |
 | user_company          |
 +-----------------------+
+
 11 rows in set (0.02 sec)
 
 
