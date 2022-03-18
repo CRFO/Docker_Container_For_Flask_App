@@ -14,10 +14,10 @@ services:
       - '/docker-entrypoint-initdb.d'
       - '/bitnami/mysql/data'
     environment: 
-            MYSQL_ROOT_PASSWORD: cFa2807
+            MYSQL_ROOT_PASSWORD: <root_password>
             MYSQL_DATABASE: schedulefyi
             MYSQL_USER: schedulefyi
-            MYSQL_PASSWORD: uN7LgrJtvN6H94Tm
+            MYSQL_PASSWORD: <schedulefyi_password>
     networks:
       - my_network_name
 
