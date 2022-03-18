@@ -32,8 +32,8 @@ mysql> show tables;
 
 
 To execute only the Flask app:
-- docker build --tag my_schedulefyi --no-cache .
-- docker run -p 5001:5000 my_schedulefyi 
+- docker build --tag <schedulefyi flask app> --no-cache .
+- docker run -p 5002:5000 <schedulefyi flask app>
 
-## Go to http://0.0.0.0:5001/ in browser
+## Go to http://0.0.0.0:5002/ in browser
 
