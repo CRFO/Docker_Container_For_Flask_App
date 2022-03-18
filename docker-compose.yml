@@ -11,8 +11,7 @@ services:
     ports:
       - '3310:3306'
     volumes:
-      - '/docker-entrypoint-initdb.d'
-      - '/bitnami/mysql/data'
+      - ./schedulefyi.sql:/docker-entrypoint-initdb.d/schedulefyi.sql
     environment: 
             MYSQL_ROOT_PASSWORD: <root_password>
             MYSQL_DATABASE: schedulefyi
