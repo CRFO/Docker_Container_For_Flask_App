@@ -12,9 +12,9 @@
 
 mysql> show tables;
 
-+-----------------------+
+|-----------------------|
 | Tables_in_schedulefyi |
-+-----------------------+
+|-----------------------|
 | company               |
 | country               |
 | location              |
@@ -26,7 +26,7 @@ mysql> show tables;
 | tasknote              |
 | user                  |
 | user_company          |
-+-----------------------+
+|-----------------------|
 
 11 rows in set (0.02 sec)
 
