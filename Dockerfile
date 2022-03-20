@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 FROM python:3.8.2-alpine
-WORKDIR /my_schedulefyi
+WORKDIR /schedulefyi
 COPY schedulefyi.sql /docker-entrypoint-initdb.d/schedulefyi.sql
 ENV FLASK_APP=schedulefyi.py
 ENV FLASK_RUN_HOST=0.0.0.0
@@ -12,6 +12,6 @@ RUN source ./env/bin/activate
 RUN python3 -m pip install --upgrade pip
 RUN pip3 install -r requirements.txt
 RUN pip3 install cryptography==3.4.6
-EXPOSE 5001
+EXPOSE 5000
 COPY . .
 CMD ["flask", "run", "--host", "0.0.0.0"]
