@@ -1,6 +1,6 @@
 # Docker_Container_For_Flask_App
 
--  Copy docker-compose.yml, Dockerfile, schedulefyi.sql and requirements.txt underneath the my_schedulefyi directory.
+-  Copy docker-compose.yml, Dockerfile, schedulefyi.sql, my_custon.cnf and requirements.txt underneath the schedulefyi directory.
 
 ## Execute the following commands in terminal:
 - docker-compose up --> It creates flask_project and mysql containers
